@@ -1,0 +1,94 @@
+.content {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.5em;
+}
+
+/* Override base .btn styles */
+/* Apply text and background changes to three key states: default, gover, and active */
+.btn-ttc,
+.btn-ttc:hover,
+.btn-ttc:active {
+    color:white;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    background-color: #007da7;
+}
+
+/* Apply the custom-colored gradients */
+/* Note: you'll need to include all the appropriate gradients for various browsers. */
+.btn-ttc {
+    background-repeat: repeat-x;
+    background-image: linear-gradient(top, #009ED2 0%, #007DA7 100%);
+}
+
+/* Set the hover state */
+.btn-ttc:hover {
+    background-position: 0 -15px;
+}
+
+.centering {
+    float:none;
+    margin: 0 auto;
+}
+
+.header-primary {
+    background-color: #5188CC;
+}
+
+.github img{
+    margin-top: 20px;
+}
+
+header menu {
+    margin: 20px 0 0;
+    padding: 0;
+    height: 40px;
+}
+
+header menu ul {
+    margin: 0;
+    padding: 0;
+    height: 40px;
+}
+
+header menu li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header menu li a {
+    display: inline-block;
+    height: 40px;
+    font-size: 17px;
+    line-height: 40;
+    padding: 0 20px;
+    color: #f6f6f6;
+}
+
+.nav-side {
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+}
+
+.nav-side li a{
+    border-bottom: 1px solid #bdbdbd;
+}
+
+.nav-side li:first-child a{
+    border-radius: 4px 0 0 0;
+}
+
+.nav-side li:last-child a {
+    border-bottom: none;
+    border-radius: 0 0 0 4px;
+}
+
+.nav-side li.active a, .nav-side li.active a:hover {
+    background-color: transparent;
+    color: #555;
+    border-left: 2px solid #E88C39;
+}
+
+.text-white {
+  color: #ffffff;
+}
