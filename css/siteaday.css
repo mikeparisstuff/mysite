@@ -1,6 +1,5 @@
-.content {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.5em;
+body {
+    background-image: url('../img/white_wall_hash.png');
 }
 
 /* Override base .btn styles */
@@ -34,40 +33,23 @@
     background-color: #5188CC;
 }
 
+.header-primary * {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.header-primary  h1 {
+    padding: 0;
+}
+
 .github img{
     margin-top: 20px;
-}
-
-header menu {
-    margin: 20px 0 0;
-    padding: 0;
-    height: 40px;
-}
-
-header menu ul {
-    margin: 0;
-    padding: 0;
-    height: 40px;
-}
-
-header menu li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-header menu li a {
-    display: inline-block;
-    height: 40px;
-    font-size: 17px;
-    line-height: 40;
-    padding: 0 20px;
-    color: #f6f6f6;
 }
 
 .nav-side {
     border: 1px solid #bdbdbd;
     border-radius: 5px;
+    margin-bottom: 5px;
+    background-color: #fff;
 }
 
 .nav-side li a{
@@ -87,6 +69,41 @@ header menu li a {
     background-color: transparent;
     color: #555;
     border-left: 2px solid #E88C39;
+}
+
+.post {
+    box-shadow: 0 0 .5em #555555;
+}
+
+.post *{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.post .content {
+    background-color: #fff;
+}
+
+.post > .content > p {
+    font-size: 20px;
+}
+
+.title {
+    background-color: #EC7569;
+    margin: 0;
+}
+
+.title > span, .content > p{
+    margin-left: 10px;
+}
+
+.post .title {
+    line-height: 200%;
+    border-left: 5px solid #E74C3C;
+}
+
+.content {
+    padding: 5px;
+    
 }
 
 .text-white {
