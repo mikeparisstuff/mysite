@@ -5,5 +5,6 @@ var config = require('./config.js')(app, express);
 
 require('./routes')(app);
 
-app.listen(8000);
-console.log('Server now listening on port 8000');
+var port = process.env.PORT || 5000;
+app.listen(port);
+console.log('Server now listening on port ' + port);
