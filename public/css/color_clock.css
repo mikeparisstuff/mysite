@@ -1,0 +1,21 @@
+#clock, #time_title, #color_title, #color {
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 5em;
+    color: #FFF;
+    text-shadow: 2px 2px 5px #000;
+}
+
+#time_title {
+    margin-top: 125px;
+    font-family: sans-serif ;
+}
+
+#color_title {
+    margin-top: 30px;
+}
+
+.github {
+    margin: 10px 10px 0 90%;
+}
