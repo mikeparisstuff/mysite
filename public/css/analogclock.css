@@ -11,6 +11,8 @@ html, body {
     margin: 20px auto 0 auto;
     background: url('/img/clockface.png');
     list-style: none;
+    border-radius: 300px;
+    box-shadow: 0 0 25px #000;
 }
 
 #sec, #min, #hour {
