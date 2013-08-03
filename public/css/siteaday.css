@@ -73,6 +73,7 @@ body {
 
 .post{
     box-shadow: 0 0 .5em #555555;
+    margin-bottom: 50px;
 }
 
 .post *{
