@@ -6,5 +6,9 @@ module.exports = function(app) {
     app.get('/clock', function(req, res) {
         res.render('colorclock');
     });
+
+    app.get('/analog', function(req, res) {
+        res.render('analogclock');
+    });
 };
 
