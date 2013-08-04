@@ -1,0 +1,14 @@
+body {
+    background-color: #EC7569;
+}
+
+#dropbox {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+#droplabel {
+    color: #fff;
+}

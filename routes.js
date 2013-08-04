@@ -10,5 +10,9 @@ module.exports = function(app) {
     app.get('/analog', function(req, res) {
         res.render('analogclock');
     });
+
+    app.get('/dragndrop', function(req, res) {
+        res.render('dragndrop');
+    });
 };
 
