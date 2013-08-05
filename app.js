@@ -1,7 +1,7 @@
 var express = require('express');
 var mongo = require('mongodb');
 var app = module.exports = express();
-var ngApp = angular.module("SiteADay");
+// var ngApp = angular.module("SiteADay");
 var config = require('./config.js')(app, express);
 
 require('./routes')(app);

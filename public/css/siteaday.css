@@ -1,112 +1,79 @@
-body {
-    background-image: url('../img/white_wall_hash.png');
-}
-
-/* Override base .btn styles */
-/* Apply text and background changes to three key states: default, gover, and active */
-.btn-ttc,
-.btn-ttc:hover,
-.btn-ttc:active {
-    color:white;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-    background-color: #007da7;
-}
-
-/* Apply the custom-colored gradients */
-/* Note: you'll need to include all the appropriate gradients for various browsers. */
-.btn-ttc {
-    background-repeat: repeat-x;
-    background-image: linear-gradient(top, #009ED2 0%, #007DA7 100%);
-}
-
-/* Set the hover state */
-.btn-ttc:hover {
-    background-position: 0 -15px;
-}
-
-.centering {
-    float:none;
-    margin: 0 auto;
-}
-
-.header-primary {
-    background-color: #5188CC;
-}
-
-.header-primary * {
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-.header-primary  h1 {
-    padding: 0;
-}
-
-.github img{
-    margin-top: 20px;
-}
-
-.nav-side {
-    border: 1px solid #bdbdbd;
-    border-radius: 5px;
-    margin-bottom: 5px;
+html, body {
     background-color: #fff;
+    height: 100%;
 }
 
-.nav-side li a{
-    border-bottom: 1px solid #bdbdbd;
-}
-
-.nav-side li:first-child a{
-    border-radius: 4px 0 0 0;
-}
-
-.nav-side li:last-child a {
-    border-bottom: none;
-    border-radius: 0 0 0 4px;
-}
-
-.nav-side li.active a, .nav-side li.active a:hover {
-    background-color: transparent;
-    color: #555;
-    border-left: 2px solid #E88C39;
-}
-
-.post{
-    box-shadow: 0 0 .5em #555555;
-    margin-bottom: 50px;
-}
-
-.post *{
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-.post .content {
-    background-color: #fff;
-}
-
-.post > .content > p {
-    font-size: 20px;
-}
-
-.title {
-    background-color: #EC7569;
-    margin: 0;
-}
-
-.title > span, .content > p{
-    margin-left: 10px;
-}
-
-.post .title {
-    line-height: 200%;
-    border-left: 5px solid #E74C3C;
-}
-
-.content {
-    padding: 5px;
-    
+.name {
+    font-size: 3.1em;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px 1px #444;
 }
 
 .text-white {
-  color: #ffffff;
+    color: #fff;
 }
+
+.sidebar {
+    position: fixed;
+    height: 100%;
+    color: #F65555;
+    font-family: 'Source Sans Pro', sans-serif;
+    box-shadow: 1px 1px 5px #555;
+    background-image: url('../img/paris2.png');
+}
+
+.sidebar-content {
+    background-color: rgba(255,255,255,.7);
+    border-radius: 10px;
+    text-align: center;
+}
+  
+.page {
+    height: 100%;
+}
+
+.post {
+    border-top: 1px solid #dbdbdb; 
+    /*border-bottom: 1px solid #dbdbdb; */
+    padding: 0 20px 10px 20px;
+}
+
+.posts {
+    padding: 5% 10%;
+}
+
+.post-title {
+    font-size: 2.2em;
+    font-weight: bold;
+}
+
+.project {
+    font-size: 1.3em;   
+    font-weight: bold;
+
+}
+
+.project > a {
+    color: #F65555;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.quote {
+    color: #000;
+}
+
+@media(max-width: 768px) {
+    .name {
+        font-size: 4em;
+    }
+    .sidebar {
+    background-image: url('../img/paris.png');
+    height: 700px;
+    }
+}
+
