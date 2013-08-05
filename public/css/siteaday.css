@@ -74,6 +74,7 @@ ul {
     .sidebar {
     background-image: url('../img/paris.png');
     height: 700px;
+    position: static;
     }
 }
 
