@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="../css/blog.css">
+<div class="blog" data-ng-controller="BlogController" data-ng-init="findOne()">
+
+  <!-- One article -->
+  <div class="articles">
+    <div class="article">
+      <h2 class="article-title">{{ article.title }}</h2>
+      <div class="article-content">
+        {{ article.content }}
+      </div>
+      <p class="date">{{article.created | date:'mediumDate'}}</p>
+    </div>
+  </div>
+
+</div>

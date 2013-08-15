@@ -1,15 +1,24 @@
 {
-    "name":"a-site-a-day",
-    "description": "A Site a Day",
+    "name":"MichaelsPortfolio",
+    "description": "My Personal Site",
     "version": "0.0.1",
     "private": true,
-    "dependencies": {
-        "express": "3.3.4",
-        "ejs":"0.8.4",
-        "mongodb": "1.1.11"
-    },
+    "author": "Michael Paris",
     "engines": {
         "node": "0.10.x",
         "npm": "1.2.x"
+    },
+    "dependencies": {
+        "express": "latest",
+        "jade": "latest",
+        "mongoose":"latest",
+        "connect-mongo":"latest",
+        "connect-flash": "latest",
+        "passport": "latest",
+        "passport-local": "latest",
+        "underscore": "latest",
+        "async": "latest",
+        "view-helpers": "latest",
+        "ejs": "latest"
     }
 }

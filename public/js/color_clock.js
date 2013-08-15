@@ -16,11 +16,11 @@ $(function() {
         min = formatTime(min);
         sec = formatTime(sec);
         $('#clock').text(hour+":"+min+":"+sec);
-        $('body').css('background-color', '#'+color);
+        $('.colorclock').css('background-color', '#'+color);
         $('#color').text('#'+color);
         t = setTimeout(function(){time();},500);
     }
-    
+
     function formatTime(time) {
         if( time < 10) {
             time = '0' + time;
@@ -42,7 +42,7 @@ $(function() {
         red = formatColor(red);
         green = formatColor(green);
         blue = formatColor(blue);
-        
+
         return (red+green+blue).toUpperCase();
     }
     time();

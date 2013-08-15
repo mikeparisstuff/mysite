@@ -1,3 +1,8 @@
+.colorclock {
+    height: 100%;
+    margin:0;
+}
+
 #clock, #time_title, #color_title, #color {
     margin: 0 auto;
     text-align: center;
@@ -17,5 +22,6 @@
 }
 
 .github {
-    margin: 10px 10px 0 90%;
+    margin: 10px 15px;
 }
+

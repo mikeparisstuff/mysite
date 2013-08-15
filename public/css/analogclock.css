@@ -1,18 +1,18 @@
-html, body {
-    background: -webkit-gradient(linear, 0 100%, 0 0, from(black), color-stop(0.25, #333), color-stop(0.5, #444), color-stop(0.75, #555), to(#002851));
-    background: -webkit-linear-gradient(black, #333, #444, #555, #002851);
-    background: -moz-linear-gradient(black, #333, #444, #555, #002851);
-    background: -o-linear-gradient(black, #333, #444, #555, #002851);
-    background: linear-gradient(black, #333, #444, #555, #002851);
-    /*background-color: #000;*/
+.analogclock {
     height: 100%;
-    width: 100%;
+    background: -webkit-gradient(linear, 0 100%, 0 0, from(black), color-stop(0.25, #333), color-stop(0.5, #444), color-stop(0.75, #555), to(#888888));
+    background: -webkit-linear-gradient(black, #333, #444, #555, #888888);
+    background: -moz-linear-gradient(black, #333, #444, #555, #888888);
+    background: -o-linear-gradient(black, #333, #444, #555, #888888);
+    background: linear-gradient(black, #333, #444, #555, #888888);
 }
-#clock {
+#analog {
     position: relative;
+    width: 60%;
+    height: 60%;
     width: 600px;
     height: 600px;
-    margin: 20px auto 0 auto;
+    margin: 50px auto 0 auto;
     background: url('/img/clockface.png');
     list-style: none;
     border-radius: 300px;
@@ -51,5 +51,5 @@ html, body {
 }
 
 .github {
-    margin-top: 30px;
+    margin: 10px 15px;
 }

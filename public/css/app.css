@@ -1,0 +1,84 @@
+/** {
+    border: 1px dotted #000;
+}*/
+html, body {
+    background-color: #fff;
+    height: 100%;
+}
+
+.date {
+    margin-right: 10px;
+}
+
+.name {
+    font-size: 3.1em;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px 1px #444;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.sidebar {
+    position: fixed;
+    height: 100%;
+    color: #F65555;
+    font-family: 'Source Sans Pro', sans-serif;
+    box-shadow: 1px 1px 5px #555;
+    background: url('../img/paris_lg.png') no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+.sidebar-content {
+    background-color: rgba(255,255,255,.7);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.page {
+    height: 100%;
+}
+
+
+#rightpanel {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.project {
+    font-size: 1.3em;
+    font-weight: bold;
+
+}
+
+.project > a {
+    color: #F65555;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.quote {
+    color: #000;
+}
+
+@media(max-width: 768px) {
+    .name {
+        font-size: 4em;
+    }
+    .sidebar {
+    background-image: url('../img/paris_sm.png');
+    height: 700px;
+    position: static;
+    }
+}
+

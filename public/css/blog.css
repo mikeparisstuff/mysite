@@ -1,0 +1,43 @@
+/*#rightpanel {
+    background-color: #fff !important;
+}*/
+.blog {
+    height: 100%;
+    background-color: #fff;
+}
+
+.articles {
+    padding: 3% 10%;
+}
+
+.article {
+    border-top: 1px solid #dbdbdb;
+    /*border-bottom: 1px solid #dbdbdb; */
+    padding: 10px;
+}
+
+.article-title {
+    font-size: 2.2em;
+    font-weight: bold;
+}
+
+.article-content {
+    font-size: 1.3em;
+}
+
+.date {
+
+}
+
+.form-article {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.btn-submit-article {
+    margin-top: 10px;
+}
+
+.btn-delete-article {
+    margin-top: 10px;
+}

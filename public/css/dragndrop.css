@@ -1,8 +1,10 @@
-body {
+.dragndrop {
     background-color: #EC7569;
+    height: 100%;
 }
 
 #dropbox {
+    background-color: #EC7569;
     position: absolute;
     height: 100%;
     width: 100%;
@@ -11,4 +13,8 @@ body {
 
 #droplabel {
     color: #fff;
+}
+
+.github {
+    margin: 10px 15px;
 }

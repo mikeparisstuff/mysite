@@ -1,0 +1,12 @@
+{
+    "name":"portfolio",
+    "version": "1.1.0",
+    "dependencies": {
+        "bootstrap": "https://github.com/twbs/bootstrap.git",
+        "angular": "~1.0.6",
+        "angular-resource":  "~1.0.6",
+        "angular-cookies":"~1.0.6",
+        "angular-sanitize":"~1.0.7",
+        "json3": "~3.2.4"
+    }
+}

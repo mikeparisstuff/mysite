@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../css/blog.css">
+<div class="blog" data-ng-controller="BlogController" data-ng-init="find()">
+
+  <!-- Blog -->
+  <div class="articles">
+    <div data-ng-repeat="article in articles" class="article">
+      <h2 class="article-title">{{ article.title }}</h2>
+      <div class="article-content">
+        {{ article.content }}
+      </div>
+      <br />
+      <div>
+        <span class="date">{{ article.created | date:'mediumDate'}}</span>  
+        <a href="#/articles/{{ article._id }}/edit" ng-show="isAuthenticated">Edit</a>
+      </div>
+    </div>
+  </div>
+
+</div>
