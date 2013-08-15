@@ -21,7 +21,7 @@ module.exports = function(app, passport, auth) {
         users.session
     );
     // Only I should have an account
-    // app.post('/signup', users.create);
+    app.post('/signup', users.create);
     app.get('/signout', users.signout);
     app.post('/signout', users.signout);
 
