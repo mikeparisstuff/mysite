@@ -11,7 +11,7 @@ angular.module('portfolio', ['articleServices', 'ngSanitize', 'authServices', 'm
         when('/articles/:articleId/edit', {templateUrl: '../views/articles/edit.html', controller:BlogController}).
         when('/music', {templateUrl: '../views/music/list.html', controller:MusicController}).
         when('/music/create', {templateUrl: '../views/music/create.html', controller:MusicController}).
-        when('/music/:songId/', {templateUrl: '../views/music/view.html', controller:MusicController}).
+        // when('/music/:songId/', {templateUrl: '../views/music/view.html', controller:MusicController}).
         when('/music/:songId/edit', {templateUrl: '../views/music/edit.html', controller:MusicController}).
         when('/clock', {templateUrl: '../views/projects/color_clock.html'}).
         when('/analog', {templateUrl: '../views/projects/analogclock.html'}).
