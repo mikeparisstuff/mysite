@@ -1,0 +1,28 @@
+/** {
+	border: 1px dotted #000;
+}*/
+.music {
+	/*height: 100%;*/
+	position: relative;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-image: url('../img/grey_wash_wall.png'); 
+}
+
+.songs {
+	padding: 1px;
+}
+
+.song {
+	margin: 3% 10%;
+	padding-top: 5px;
+	background-color: #fefefe;
+	border-radius: 10px;
+	box-shadow: 1px 1px 7px #555;
+}
+
+.song-title, .song-content {
+	text-align: center;
+}

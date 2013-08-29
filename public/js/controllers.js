@@ -5,15 +5,6 @@ function BlogController($scope, Article, $location, $routeParams, $http)
         $scope.isAuthenticated = user!="null";
     });
 
-    // User.query(function(user){
-    //     // if(user) {
-    //     //     $scope.isAuthenticated = false;    
-    //     // } else {
-    //     //     $scope.isAuthenticated = true;
-    //     // }
-    //     $scope.isAuthenticated = user=="null";
-    // });
-
     $scope.create = function() {
         var article = new Article({title: this.title, content: this.content});
         article.$save(function(response) {
@@ -60,8 +51,56 @@ function BlogController($scope, Article, $location, $routeParams, $http)
 }
 
 /**
-*   Controller for the multiple super-mini projects.
+*  Music View Controller
 */
-function OneADayController($scope)
+function MusicController($scope, Song, $location, $routeParams, $http) 
 {
+    $http.get('/me').success(function(user) {
+        $scope.isAuthenticated = user!="null";
+    });
+
+    $scope.create = function() {
+        /**
+        *   New songs have a title (required), type(required), url(required), description(optional)
+        */
+        var song = new Song({title: this.title, url: this.url, description: this.description});
+        song.$save(function(response) {
+            $location.path('music/');
+        });
+    };
+
+    $scope.remove = function() {
+        for(var i in $scope.songs) {
+            if($scope.songs[i] = song) {
+                $scope.songs.splice(i, 1);
+            }
+        }
+        song.$remove(function(response) {
+            $location.path('music/');
+        });
+    }
+
+    $scope.find = function(query) {
+        Song.query(function(songs) {
+            $scope.songs = songs;
+        });
+    };
+
+    $scope.findOne = function() {
+        Song.get({songId: $routeParams.songId }, function(song) {
+            $scope.song = song;
+        });
+    };
+
+    $scope.update = function() {
+        var song = $scope.song;
+        if(!song.updated) {
+            song.updated = [];
+        }
+        song.updated.push(new Date().getTime());
+
+        song.$update(function() {
+            $location.path('music/');
+        });
+    };
 }

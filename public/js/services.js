@@ -13,6 +13,18 @@ angular.module('articleServices', ['ngResource']).
     });
 });
 
+/**
+*   Music Services
+*/
+angular.module('musicServices', ['ngResource']).
+    factory('Song', function($resource){
+        return $resource('music/:songId', {songId: '@_id'}, {
+            query: {method:'GET', isArray:true},
+            update: {method:'PUT'},
+            remove: {method: 'DELETE'}
+    });
+});
+
 angular.module('authServices', ['ngResource']).
 	factory('User', function($resource){
 		return $resource('me', {
