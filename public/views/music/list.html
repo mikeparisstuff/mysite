@@ -6,7 +6,7 @@
       <h2 class="song-title">{{ song.title }}</h2>
       <div class="song-content">
         <!-- <iframe width="854" height="510" src="{{ song.url }}" frameborder="0" allowfullscreen></iframe> -->
-        <iframe type="text/html" width="854" height="510" src="{{ song.url }}&origin=http://michaelparis.us" frameborder="0" allowfullscreen></iframe>
+        <iframe type="text/html" width="854" height="510" src="{{ song.url }}" frameborder="0" allowfullscreen></iframe>
         <p class="lead">{{ song.description }}</p>
         <span class="date">{{ song.created | date:mediumDate }}</span>
         <a href="#/music/{{ song._id }}/edit" ng-show="isAuthenticated">Edit</a>
