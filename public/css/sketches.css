@@ -13,13 +13,24 @@
 	margin: 0 auto;
 }
 
-.sketch-content > img {
+.sketch-wrapper {
+	max-width: 90%;
+	height: auto;
+	position: relative;
+	display: block;
+	margin: 0 auto;
+}
+
+.sketch-content img {
 	border-radius: 25px;
 	box-shadow: 3px 3px 5px #555;
+	width: 100% !important;
+	height: 100% !important;
+	display: block;
 }
 
 .sketch-title {
-	margin: 0 40%;
+	margin: 0 30%;
 	margin-top: 10px;
 	padding: 5px 0;
 	background-color: #fff;

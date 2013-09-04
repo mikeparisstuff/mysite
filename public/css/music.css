@@ -23,6 +23,21 @@
 	box-shadow: 1px 1px 7px #555;
 }
 
+.song-wrapper {
+	max-width: 90%;
+	height: auto;
+	position: relative;
+	display: block;
+	margin: 0 auto;
+}
+
+.song-wrapper iframe {
+	width: 100%;
+	/*height: 100%;*/
+	/*height: auto;*/
+	display: block;
+}
+
 .song-title, .song-content {
 	text-align: center;
 }
