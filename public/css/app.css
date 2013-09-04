@@ -27,7 +27,7 @@ html, body {
     height: 100%;
     color: #F65555;
     /*font-family: 'Source Sans Pro', sans-serif;*/
-    box-shadow: 1px 1px 5px #555 !important;
+    /*box-shadow: 1px 1px 5px #555 !important;*/
     background: url('../img/paris_lg.png') no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;

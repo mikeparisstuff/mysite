@@ -13,8 +13,8 @@
   </form>
   <div class="articles">
     <div class="article">
-      <h2 class="article-title">{{ title }}</h2>
-      <div class="article-content">{{ content }}</div>
+      <h2 class="article-title" ng-bind-html="title"></h2>
+      <div class="article-content" ng-bind-html="content"></div>
     </div>
   </div>
 </div>

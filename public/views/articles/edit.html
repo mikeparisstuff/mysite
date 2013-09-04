@@ -16,10 +16,8 @@
   </form>
   <div class="articles">
     <div class="article">
-      <h2 class="article-title">{{ article.title }}</h2>
-      <div class="article-content">
-        {{ article.content }}
-      </div>
+      <h2 class="article-title" ng-bind-html="article.title"></h2>
+      <div class="article-content" ng-bind-html="article.content"></div>
     </div>
   </div>
 </div>

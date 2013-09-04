@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="../css/sketches.css">
+<div class="sketches" style="height: 100%" data-ng-controller="SketchController" data-ng-init="findOne()">
+
+  <!-- One sketch -->
+    <div class="sketch">
+      <h2 class="sketch-title">{{sketch.title}}</h2>
+      <div class="sketch-content">
+      	<img title="{{ sketch.title }}" src="{{ sketch.url }}">
+      </div>
+      <div class="sketch-footer">
+        <span class="date">{{ sketch.created | date:mediumDate }}</span>
+        <a href="/#/sketches/{{ sketch._id }}/edit" ng-show="isAuthenticated">Edit</a>
+      </div>
+    </div>
+
+</div>

@@ -1,12 +1,11 @@
 <link rel="stylesheet" href="../css/blog.css">
 <div class="blog" data-ng-controller="BlogController" data-ng-init="find()">
+  <a ng-show="isAuthenticated" class="add-post" href="/#/articles/create">Add Post</a>
   <!-- Blog -->
   <div class="articles">
     <div data-ng-repeat="article in articles" class="article">
-      <h2 class="article-title">{{ article.title }}</h2>
-      <div class="article-content">
-        {{ article.content }}
-      </div>
+      <h2 class="article-title" ng-bind-html="article.title"></h2>
+      <div class="article-content" ng-bind-html="article.content"></div>
       <br />
       <div class="article-footer">
         <span class="date">{{ article.created | date:'mediumDate'}}</span>  

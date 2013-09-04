@@ -1,6 +1,11 @@
 /*#rightpanel {
     background-color: #fff !important;
 }*/
+.add-post {
+    float: right;
+    margin: 10px 100px;
+}
+
 .blog {
     position: relative;
     top: 0;
