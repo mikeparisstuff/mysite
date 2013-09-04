@@ -25,6 +25,19 @@ angular.module('musicServices', ['ngResource']).
     });
 });
 
+/**
+*   Sketch Services
+*/
+angular.module('sketchServices', ['ngResource']).
+    factory('Sketch', function($resource){
+        return $resource('sketches/:sketchId', {sketchId: '@_id'}, {
+            query: {method:'GET', isArray:true},
+            update: {method:'PUT'},
+            remove: {method: 'DELETE'}
+    });
+});
+
+
 angular.module('authServices', ['ngResource']).
 	factory('User', function($resource){
 		return $resource('me', {

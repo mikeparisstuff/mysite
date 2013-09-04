@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="../css/sketches.css">
+<div class="sketches" data-ng-controller="SketchController" data-ng-init="find()">
+  <!-- sketches List -->
+  <div data-ng-repeat="sketch in sketches" class="sketch">
+    <h2 class="sketch-title">{{ sketch.title }}</h2>
+    <div class="sketch-content">
+      <!-- <iframe width="854" height="510" src="{{ sketch.url }}" frameborder="0" allowfullscreen></iframe> -->
+      <img title="{{ sketch.title }}" src="{{ sketch.url }}">
+    </div>
+    <span class="date">{{ sketch.created | date:mediumDate }}</span>
+    <a href="/#/sketches/{{ sketch._id }}/edit" ng-show="isAuthenticated">Edit</a>
+    <br />
+  </div>
+
+</div>

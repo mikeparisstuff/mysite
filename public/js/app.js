@@ -1,5 +1,5 @@
 /* App Module */
-angular.module('portfolio', ['articleServices', 'ngSanitize', 'authServices', 'musicServices']).
+angular.module('portfolio', ['articleServices', 'ngSanitize', 'authServices', 'musicServices', 'sketchServices']).
     config(['$routeProvider', function($routeProvider) {
     $routeProvider.
         when('/', {templateUrl: '../views/articles/list.html', controller:BlogController}).
@@ -13,6 +13,10 @@ angular.module('portfolio', ['articleServices', 'ngSanitize', 'authServices', 'm
         when('/music/create', {templateUrl: '../views/music/create.html', controller:MusicController}).
         // when('/music/:songId/', {templateUrl: '../views/music/view.html', controller:MusicController}).
         when('/music/:songId/edit', {templateUrl: '../views/music/edit.html', controller:MusicController}).
+        when('/sketches', {templateUrl: '../views/sketches/list.html', controller:SketchController}).
+        when('/sketches/create', {templateUrl: '../views/sketches/create.html', controller:SketchController}).
+        when('/sketches/:sketchId', {templateUrl: '../views/sketches/view.html', controller:SketchController}).
+        when('/sketches/:sketchId/edit', {templateUrl: '../views/sketches/edit.html', controller:SketchController}).
         when('/clock', {templateUrl: '../views/projects/color_clock.html'}).
         when('/analog', {templateUrl: '../views/projects/analogclock.html'}).
         when('/dragndrop', {templateUrl: '../views/projects/dragndrop.html'}).

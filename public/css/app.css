@@ -4,6 +4,7 @@
 html, body {
     background-color: #fff;
     height: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 
 .date {
@@ -11,10 +12,10 @@ html, body {
 }
 
 .name {
-    font-size: 3.1em;
+    font-size: 4.5em;
     font-weight: bold;
     text-align: center;
-    text-shadow: 1px 1px 1px #444;
+    /*text-shadow: 1px 1px 4px #000;*/
 }
 
 .text-white {
@@ -25,18 +26,22 @@ html, body {
     position: fixed;
     height: 100%;
     color: #F65555;
-    font-family: 'Source Sans Pro', sans-serif;
-    box-shadow: 1px 1px 5px #555;
+    /*font-family: 'Source Sans Pro', sans-serif;*/
+    box-shadow: 1px 1px 5px #555 !important;
     background: url('../img/paris_lg.png') no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
 
+.name {
+    font-family: 'Mouse Memoirs', sans-serif;
 }
 
 .sidebar-content {
-    background-color: rgba(255,255,255,.7);
+    /*background-color: rgba(52,152, 219, .7); */
+    background-color: rgba(255, 255, 255, .7); 
     border-radius: 10px;
     text-align: center;
 }
@@ -52,10 +57,13 @@ html, body {
     margin: 0;
 }
 
-.project {
-    font-size: 1.3em;
-    font-weight: bold;
+.projects-header {
+    font-size: 2.2em;
+}
 
+.project {
+    font-size: 1.7em;
+    /*font-weight: bold;*/
 }
 
 .project > a {
@@ -68,7 +76,12 @@ ul {
 }
 
 .quote {
+
+}
+
+.quote > p {
     color: #000;
+    /*font-weight: bold;*/
 }
 
 @media(max-width: 768px) {

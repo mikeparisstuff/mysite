@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="../css/sketches.css">
+<div class="sketches" data-ng-controller="SketchController">
+  <form data-ng-submit="create()">
+      <div class="container">
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="input-group col-lg-10 col-sm-10 form-sketch">
+          <input class="form-control" type="text" data-ng-model="title" id="title" placeholder="Title">
+          <input class="form-control" type="text" data-ng-model="url" id="url" placeholder="Url">
+          <input type="submit" class="submit-sketch btn btn-primary btn-large col-lg-12 col-sm-12">
+        </div>
+        <div class="col-lg-1 col-sm-1"></div>
+      </div>
+  </form>
+  <div class="sketches">
+    <div class="sketch">
+      <h2 class="sketch-title">{{ title }}</h2>
+      <div class="sketch-content">
+        <img title="{{ title }}" src="{{ url }}">
+      </div>
+    </div>
+  </div>
+</div>

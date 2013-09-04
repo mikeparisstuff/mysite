@@ -19,6 +19,7 @@
         "underscore": "latest",
         "async": "latest",
         "view-helpers": "latest",
-        "ejs": "latest"
+        "ejs": "latest",
+        "dropbox": "latest"
     }
 }

@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="../css/sketches.css">
+<div class="sketches" data-ng-controller="SketchController" data-ng-init="findOne()">
+  <form data-ng-submit="update()">
+      <div class="container">
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="input-group col-lg-10 col-sm-10 form-sketch">
+          <input class="form-control" type="text" data-ng-model="sketch.title" id="title" placeholder="Title"></input>
+          <input class="form-control" type="text" data-ng-model="sketch.url" id="url" placeholder="Url">
+          <button class="btn-submit-sketch btn btn-primary btn-large col-lg-12 col-sm-12">Submit</button>
+          <a ng-click="remove(sketch)" class="btn-delete-sketch btn btn-danger btn-large col-lg-12 col-sm-12">Delete</a>
+        </div>
+        <div class="col-lg-1 col-sm-1"></div>
+      </div>
+  </form>
+  <div class="sketches">
+    <div class="sketch">
+      <h2 class="sketch-title">{{ sketch.title }}</h2>
+      <div class="sketch-content">
+        <img title="{{ sketch.title }}" src="{{ sketch.url }}">
+      </div>
+    </div>
+  </div>
+</div>

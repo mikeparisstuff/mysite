@@ -25,6 +25,8 @@ var express = require('express')
 
     // logger is below static so that static files are not logged
     app.use(express.logger())
+    
+    app.use(express.errorHandler());
 
     // set views path, template engine and default layout
     app.set('views', config.root + '/app/views')

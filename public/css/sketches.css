@@ -1,0 +1,27 @@
+.sketches {	
+	position: relative;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-image: url('../img/triangular.png');
+	text-align: center;
+}
+
+.sketch {
+	padding: 1px;
+	margin: 0 auto;
+}
+
+.sketch-content > img {
+	border-radius: 25px;
+	box-shadow: 3px 3px 5px #555;
+}
+
+.sketch-title {
+	margin: 0 40%;
+	margin-top: 10px;
+	padding: 5px 0;
+	background-color: #fff;
+	border-radius: 7px 7px 0 0;
+}

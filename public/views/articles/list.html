@@ -1,6 +1,5 @@
 <link rel="stylesheet" href="../css/blog.css">
 <div class="blog" data-ng-controller="BlogController" data-ng-init="find()">
-
   <!-- Blog -->
   <div class="articles">
     <div data-ng-repeat="article in articles" class="article">
@@ -9,7 +8,7 @@
         {{ article.content }}
       </div>
       <br />
-      <div>
+      <div class="article-footer">
         <span class="date">{{ article.created | date:'mediumDate'}}</span>  
         <a href="#/articles/{{ article._id }}/edit" ng-show="isAuthenticated">Edit</a>
       </div>

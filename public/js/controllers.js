@@ -69,9 +69,9 @@ function MusicController($scope, Song, $location, $routeParams, $http)
         });
     };
 
-    $scope.remove = function() {
+    $scope.remove = function(song) {
         for(var i in $scope.songs) {
-            if($scope.songs[i] = song) {
+            if($scope.songs[i] == song) {
                 $scope.songs.splice(i, 1);
             }
         }
@@ -103,4 +103,63 @@ function MusicController($scope, Song, $location, $routeParams, $http)
             $location.path('music/');
         });
     };
+}
+
+/**
+*   Sketch View Controller
+*/
+function SketchController($scope, Sketch, $location, $routeParams, $http)
+{
+    $http.get('/me').success(function(user) {
+        $scope.isAuthenticated = user!='null';
+    })
+
+    $scope.create = function() {
+        /**
+        *   New Sketches have a title (required), url()
+        */
+        var sketch = new Sketch({
+            title: this.title,
+            url: this.url
+        });
+        sketch.$save(function(response) {
+            $location.path('sketches/');
+        });
+    };
+
+    $scope.remove = function(sketch) {
+        for(var i in $scope.sketches) {
+            if($scope.sketches[i] == sketch) {
+                $scope.sketches.splice(i,1);
+            }
+        }
+        sketch.$remove(function(response) {
+            $location.path('sketches/');
+        });
+    };
+
+    $scope.find = function(query) {
+        Sketch.query(function(sketches) {
+            $scope.sketches = sketches;
+        });
+    };
+
+    $scope.findOne = function() {
+        Sketch.get({sketchId: $routeParams.sketchId}, function(sketch) {
+            $scope.sketch = sketch;
+        });
+    };
+
+    $scope.update = function() {
+        var sketch = $scope.sketch;
+        if(!sketch.updated) {
+            sketch.updated = [];
+        }
+        sketch.updated.push(new Date().getTime());
+
+        sketch.$update(function() {
+            $location.path('sketches/');
+        });
+    };
+
 }

@@ -21,6 +21,17 @@ module.exports = function(app, passport, auth) {
     app.post('/music', auth.requiresLogin, songs.create)
     app.param('songId', songs.song)
 
+    /**
+    *   Sketches endpoints
+    */
+    var sketches = require('../app/controllers/sketches')
+    app.get('/sketches', sketches.all)
+    app.get('/sketches/:sketchId', sketches.show)
+    app.put('/sketches/:sketchId', auth.requiresLogin, sketches.update)
+    app.del('/sketches/:sketchId', auth.requiresLogin, sketches.destroy)
+    app.post('/sketches', auth.requiresLogin, sketches.create)
+    app.param('sketchId', sketches.sketch)
+
     var users = require('../app/controllers/users')
     app.get('/me', users.me)
     app.get('/login', users.login)
@@ -42,5 +53,6 @@ module.exports = function(app, passport, auth) {
     app.get('/analog', projects.analogClock)
     app.get('/dragndrop', projects.dragNDrop)
 
+    app.get('/oauth_callback', articles.all)
 };
 
