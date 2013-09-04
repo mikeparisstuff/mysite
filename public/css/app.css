@@ -18,6 +18,11 @@ html, body {
     /*text-shadow: 1px 1px 4px #000;*/
 }
 
+.name-link, .name-link:hover {
+    text-decoration:none;
+    color: #F65555;
+}
+
 .text-white {
     color: #fff;
 }
