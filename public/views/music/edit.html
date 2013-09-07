@@ -17,7 +17,9 @@
     <div class="song">
       <h2 class="song-title">{{ song.title }}</h2>
       <div class="song-content">
-        <iframe width="854" height="510" src="{{ song.url }}" frameborder="0" allowfullscreen></iframe>
+        <div class="song-wrapper">
+          <iframe width="854" height="510" src="{{ song.url }}" frameborder="0" allowfullscreen></iframe>
+        </div>
         <p class="lead">{{ song.description }}</p>
       </div>
     </div>

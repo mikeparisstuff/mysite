@@ -10,8 +10,10 @@
           <iframe type="text/html" width="854" height="510" src="{{ song.url }}" frameborder="0" allowfullscreen></iframe>
         </div>
         <p class="lead">{{ song.description }}</p>
-        <span class="date">{{ song.created | date:mediumDate }}</span>
-        <a href="#/music/{{ song._id }}/edit" ng-show="isAuthenticated">Edit</a>
+        <div class="music-footer">
+          <span class="date">{{ song.created | date:mediumDate }}</span>
+          <a href="#/music/{{ song._id }}/edit" ng-show="isAuthenticated">Edit</a>
+        </div>
       </div>
       <br />
     </div>
