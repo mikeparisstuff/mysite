@@ -6,7 +6,11 @@
     <div class="article">
       <h2 class="article-title" ng-bind-html="article.title"></h2>
       <div class="article-content" ng-bind-html="article.content"></div>
-      <p class="date">{{article.created | date:'mediumDate'}}</p>
+      <br />
+      <div class="article-footer">
+        <span class="date">{{ article.created | date:'mediumDate'}}</span>  
+        <a href="#/articles/{{ article._id }}/edit" ng-show="isAuthenticated">Edit</a>
+      </div>
     </div>
   </div>
 
