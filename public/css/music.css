@@ -57,11 +57,14 @@
 }*/
 
 .song-title, .song-content {
-	font-size: 3vw;
 	text-align: center;
 }
 
-.music-footer {
-	/* Responsive Font size that changes with viewport width */
-	font-size: 1.5vw;
+@media(max-width: 750px) {
+	.song-title {
+		font-size: 1.5em;
+	}
+	.music-footer {
+		font-size: .9em;
+	}	
 }
