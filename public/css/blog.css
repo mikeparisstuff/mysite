@@ -19,6 +19,8 @@
 
 .articles {
     padding: 3% 7%;
+    max-width: 90%;
+    margin: 0 auto;
 }
 
 .article {
