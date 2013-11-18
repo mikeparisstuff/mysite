@@ -1,4 +1,4 @@
-siteaday
+MichaelParis.us
 ========
 
 Becoming a better web designer through practice.
